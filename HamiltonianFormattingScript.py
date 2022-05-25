@@ -8,7 +8,6 @@
 file = open(r"C:\Users\DLG\Desktop\HamiltonianCopy.txt")
 #replace with whatever file name you want it to be
 newfile = open("FormattedHamiltonian.txt", "w+")
-print(z.read())
 for x in file:
     line = x.split()
     if len(line) > 0:
@@ -21,7 +20,7 @@ for x in file:
         #print(c)
         d = ""
         for i in line:
-            d += " " + i
+            d += i + " "
           
         newfile.write(d+ "\n")
 file.close()
